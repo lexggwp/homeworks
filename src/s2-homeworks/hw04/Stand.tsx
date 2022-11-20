@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import s from './Stand.module.css'
 import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
@@ -9,6 +9,10 @@ const Stand = () => {
     const [error, setError] = useState<string>('')
 
     const [stateForAllCheckboxes, setChecked] = useState<boolean>(false)
+    const setValueHandler = (value: string) => {
+        setError('')
+        setValue(value)
+    }
 
     return (
         <div id={'hw4-stand'} className={s.stand}>
@@ -26,7 +30,7 @@ const Stand = () => {
                     <SuperInputText
                         id={'hw4-super-input-with-error'}
                         value={stateForAllInputs}
-                        onChangeText={setValue}
+                        onChangeText={ (value) => setValueHandler(value)}
                         error={error}
                         onEnter={() => {
                             setError(
@@ -43,7 +47,8 @@ const Stand = () => {
             <div className={s.buttons}>
                 {/*обычная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-default'}>
+                    <SuperButton id={'hw4-super-button-default'} xType={'default'}>
+
                         default
                     </SuperButton>
                 </div>
