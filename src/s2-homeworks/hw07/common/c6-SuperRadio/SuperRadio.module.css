@@ -1,15 +1,40 @@
 .radio {
-}
-
-.radio::before {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 1px;
 }
 
 
 .radio:checked::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background: #000000;
+    border: 1px solid white;
+    width: 60%;
+    height: 60%;
 }
 
 .label {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+
 }
 
 .options {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+
 }
