@@ -1,23 +1,47 @@
 .item {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
 }
 
 .item:last-of-type {
 }
 
 .users {
+    width: 606px;
+    height: 36px;
+
+
 }
 
 .buttonsContainer {
 }
 
 .container {
+
 }
 
 .thead {
+    background: #E5E5E5;
 }
 
 .nameCol {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .ageCol {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
 }
